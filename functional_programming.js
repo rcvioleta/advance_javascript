@@ -40,13 +40,13 @@ const taxable = state => ({
 })
 
 const items = [{
-    name: 'Mango',
-    price: 20
-  },
-  {
-    name: 'MSI Motherboard',
-    price: 15
-  }
+  name: 'Mango',
+  price: 20
+},
+{
+  name: 'MSI Motherboard',
+  price: 15
+}
 ]
 
 const newUser = User('Kentoy Elorde')
