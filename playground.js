@@ -34,23 +34,23 @@ const User = name => {
   const state = {
     name,
     cart: []
-  }
+  };
 
-  return Object.assign(state, purchase(state))
-}
+  return Object.assign(state, purchase(state));
+};
 
 const purchase = state => ({
-  addToCart: (item) => {
-    const newCart = state.cart
-    newCart.push(item)
+  addToCart: item => {
+    const newCart = state.cart;
+    newCart.push(item);
     // state.cart = [...newCart]
     // return state.cart
-    return newCart
+    return newCart;
   }
-})
+});
 
-const user = User('John Doe')
-user.addToCart('mango')
-user.addToCart('banana')
-console.log(user.addToCart('apple'))
-user 
+const user = User("John Doe");
+user.addToCart("mango");
+user.addToCart("banana");
+console.log(user.addToCart("apple"));
+user;
