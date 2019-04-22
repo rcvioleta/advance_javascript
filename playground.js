@@ -49,6 +49,7 @@ const purchase = state => ({
   }
 });
 
+
 const user = User("John Doe");
 user.addToCart("mango");
 user.addToCart("banana");
